@@ -4,28 +4,29 @@
     --font-main: Verdana, sans-serif;
     --font-secondary: Verdana, sans-serif;
     --font-scale: 1em;
-    --background-color: #fff;
+    --background-color: #f3f3e0;
+    --title-color: #133e87;
     --heading-color: #222;
     --text-color: #444;
-    --link-color: #3273dc;
+    --link-color: #608bc1;
     --visited-color: #8b6fcb;
-    --code-background-color: #f2f2f2;
+    --code-background-color: #cbdceb;
     --code-color: #222;
     --blockquote-color: #222;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background-color: #01242e;
-      --heading-color: #eee;
-      --text-color: #ddd;
-      --link-color: #8cc2dd;
-      --visited-color: #8b6fcb;
-      --code-background-color: #000;
-      --code-color: #ddd;
-      --blockquote-color: #ccc;
-    }
-  }
+  <!-- @media (prefers-color-scheme: dark) { -->
+  <!--   :root { -->
+  <!--     --background-color: #01242e; -->
+  <!--     --heading-color: #eee; -->
+  <!--     --text-color: #ddd; -->
+  <!--     --link-color: #8cc2dd; -->
+  <!--     --visited-color: #8b6fcb; -->
+  <!--     --code-background-color: #000; -->
+  <!--     --code-color: #ddd; -->
+  <!--     --blockquote-color: #ccc; -->
+  <!--   } -->
+  <!-- } -->
 
   body {
     font-family: var(--font-secondary);
@@ -41,7 +42,11 @@
     color: var(--text-color);
   }
 
-  h1,
+  h1 {
+    font-family: var(--font-main);
+    color: var(--title-color);
+  }
+
   h2,
   h3,
   h4,
